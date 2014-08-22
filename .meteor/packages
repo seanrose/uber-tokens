@@ -7,3 +7,5 @@ standard-app-packages
 iron-router
 bootstrap-3
 iron-router-progress
+force-ssl
+http
