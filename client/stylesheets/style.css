@@ -33,6 +33,10 @@ a:hover {
 	color: rgba(31, 186, 214, .9);
 }
 
+small {
+	opacity: .75;
+}
+
 /* Buttons and Formz */
 .btn-blue {
 	font-weight: bold;
@@ -79,3 +83,16 @@ a:hover {
    @-moz-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
      @-o-keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
         @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+.pulse {
+  -webkit-animation: pulse 1.5s .5s ease-in-out 2;
+     -moz-animation: pulse 1.5s .5s ease-in-out 2;
+       -o-animation: pulse 1.5s .5s ease-in-out 2;
+          animation: pulse 1.5s .5s ease-in-out 2;
+}
+
+@-webkit-keyframes pulse { 0% { opacity: .75; } 50% { opacity: .2; } 100% { opacity: .75; } }
+   @-moz-keyframes pulse { 0% { opacity: .75; } 50% { opacity: .2; } 100% { opacity: .75; } }
+     @-o-keyframes pulse { 0% { opacity: .75; } 50% { opacity: .2; } 100% { opacity: .75; } }
+        @keyframes pulse { 0% { opacity: .75; } 50% { opacity: .2; } 100% { opacity: .75; } }
+
