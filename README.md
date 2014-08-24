@@ -46,3 +46,7 @@ From the root of the project folder run
 The app will run at [localhost:3000](http://localhost:3000). Enter your OAuth 2 credentials, and it will take you through the OAuth flow.
 
 ![App Landing Page Screenshot](https://www.evernote.com/shard/s146/sh/14042655-8ed3-40ec-92ae-5004b669acd5/2829c526952958a06bfffc0faa5b34ea/deep/0/8-23-14,-10-49-PM.png)
+
+## Begin hacking on the [Uber API](https://developer.uber.com/v1/endpoints/)
+
+![tom brady high five](http://i.imgur.com/DT28r0j.gif)
