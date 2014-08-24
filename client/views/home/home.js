@@ -3,17 +3,22 @@ function buildAuthorizeURL(clientId, response_type, options) {
 
 	options.response_type = response_type || 'code'; // Uber currently only supports one response_type
 	options.client_id = clientId;
+    options.redirect_uri = window.location.origin + '/token';
 
 	return authorizeURL + '?' + qstringify(options);
 }
 
 Template.home.events({
-	// TODO(seanrose): add fadeout animation
-	'click button': function (e) {
-		e.preventDefault();
-		//TODO(seanrose): make these actually come from the HTML form
-		var clientId = Meteor.settings.public.uber.clientId;
+    'submit form': function(e, template) {
+        e.preventDefault();
+        var $form = $(e.target);
 
-		window.location.replace(buildAuthorizeURL(clientId));
-	}
+        var clientId = $(e.target).find('[name=clientId]').val();
+        var clientSecret = $(e.target).find('[name=clientSecret]').val();
+        amplify.store('clientId', clientId);
+        amplify.store('clientSecret', clientSecret);
+
+        var url = buildAuthorizeURL(clientId);
+        window.location.replace(url);
+    }
 });

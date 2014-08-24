@@ -1,7 +1,19 @@
 <template name="home">
 <div class="row">
-	<div class="col-md-4 col-md-offset-4">
-		<button class="btn btn-default btn-lg btn-block">Get Uber Tokens</button>
+	<div class="col-md-4 col-md-offset-4 vertically-centered">
+        <h1>Generate a token for the <a href="https://developer.uber.com/">Uber API</a></h1>
+        <br>
+		<form role="form">
+  			<div class="form-group">
+    			<label for="clientId">Client ID</label>
+    			<input type="text" class="form-control" name="clientId" placeholder="Your Uber API Client ID" required>
+  			</div>
+  			<div class="form-group">
+    			<label for="clientSecret">Client Secret</label>
+    			<input type="text" class="form-control" name="clientSecret" placeholder="Your Uber API Client Secret" required>
+  			</div>
+ 			<button type="submit" class="btn btn-blue btn-block">GET MY UBER TOKEN</button>
+		</form>
 	</div>
 </div>
 </template>
