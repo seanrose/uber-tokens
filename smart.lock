@@ -6,7 +6,8 @@
         "version": "0.8.2"
       },
       "bootstrap-3": {},
-      "iron-router-progress": {}
+      "iron-router-progress": {},
+      "iron-router-ga": {}
     },
     "packages": {
       "iron-router": {
@@ -23,6 +24,11 @@
         "git": "https://github.com/Multiply/iron-router-progress.git",
         "tag": "v0.4.1",
         "commit": "496fcda9a6ec352b4733725f60c6f280250c3541"
+      },
+      "iron-router-ga": {
+        "git": "https://github.com/reywood/meteor-iron-router-ga.git",
+        "tag": "v0.2.5",
+        "commit": "ede54c4633f9a54fddd5c431202a88284df2a932"
       },
       "iron-layout": {
         "git": "https://github.com/EventedMind/iron-layout.git",

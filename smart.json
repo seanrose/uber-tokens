@@ -4,6 +4,7 @@
       "version": "0.8.2"
     },
     "bootstrap-3": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "iron-router-ga": {}
   }
 }
