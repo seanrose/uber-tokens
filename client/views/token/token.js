@@ -1,3 +1,9 @@
+amplify.clearStore = function() {
+	_.each(amplify.store(), function(value, key) {
+		amplify.store(key, null);
+	});
+};
+
 function insertToken(error, result) {
 	if (error) {
 		var homePath = Router.routes.home.path();
@@ -7,6 +13,7 @@ function insertToken(error, result) {
 	}
 
 	this.$('a').addClass('fade-in');
+	amplify.clearStore();
 }
 
 Template.token.rendered = function () {
