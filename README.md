@@ -1,6 +1,12 @@
+# [uber.meteor.com](https://uber.meteor.com/)
+
 This is a simple [Meteor](http://docs.meteor.com/) app to generate OAuth 2 access tokens for the [Uber API](https://developer.uber.com/), allowing you to begin playing around with the API with your own account quickly.
 
-Uber does not as of yet provide an easy means of generating tokens for your own account for testing/exploratory purposes, so I built this to help everyone else save an hour or so from having to build the OAuth 2 process before doing anything with the API
+Uber does not as of yet provide an easy means of generating tokens for your own account for testing/exploratory purposes, so I built this to help everyone else save an hour or so from having to build the OAuth 2 process before doing anything with the API.
+
+You can use [the app running on meteor.com](https://uber.meteor.com/), or use the below instructions to run it locally.
+
+*Note: Client ID and Secret are handled serverside to request the access token but are not stored at rest. They are, however, temporarily stored on the client using [amplifyjs](http://amplifyjs.com/) in order to handle the callback from the Uber API*
 
 # Local Installation
 
