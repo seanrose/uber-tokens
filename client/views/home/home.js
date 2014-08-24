@@ -1,3 +1,12 @@
+/**
+ * Builds the OAuth2 authorization URL
+ *
+ * @param  {String} clientId
+ * @param  {String} redirectURI
+ * @param  {String} response_type
+ * @param  {String} options
+ * @return {String}
+ */
 function buildAuthorizeURL(clientId, redirectURI, response_type, options) {
 	options = options || {};
 
@@ -9,7 +18,7 @@ function buildAuthorizeURL(clientId, redirectURI, response_type, options) {
 }
 
 Template.home.events({
-    'submit form': function(e, template) {
+    'submit form': function(e) {
         e.preventDefault();
         var $form = $(e.target);
 

@@ -1,9 +1,22 @@
+/**
+ * Clears all values currently stored via amplify
+ * @return {undefined}
+ */
 amplify.clearStore = function() {
 	_.each(amplify.store(), function(value, key) {
 		amplify.store(key, null);
 	});
 };
 
+/**
+ * Inserts the access token into the page
+ * If an error occurs, an error message is
+ * inserted instead
+ *
+ * @param  {Object} error
+ * @param  {Object} result
+ * @return {undefined}
+ */
 function insertToken(error, result) {
 	if (error) {
 		var homePath = Router.routes.home.path();

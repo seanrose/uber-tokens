@@ -1,4 +1,15 @@
 Meteor.methods({
+	/**
+	 * Serverside HTTP request to generate
+	 * an OAuth2 access token
+	 *
+	 * @param  {String} clientId
+	 * @param  {String} clientSecret
+	 * @param  {String} redirectURI
+	 * @param  {String} code
+	 * @param  {String} grantType
+	 * @return {String}
+	 */
 	accessToken: function(clientId, clientSecret, redirectURI, code, grantType) {
 		var data = {
 			client_id: clientId,
